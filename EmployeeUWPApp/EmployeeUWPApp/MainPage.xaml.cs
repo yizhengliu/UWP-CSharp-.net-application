@@ -42,9 +42,9 @@ namespace EmployeeUWPApp
             btnThankYou.Click += BtnThankYou_Click;
         }
 
-        private void BtnThankYou_Click(object sender, RoutedEventArgs e)
+        private async void BtnThankYou_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            await SpeakAsync("Thank you, and take care!");
         }
 
         //method will be invoked when but first name changed is pressed
